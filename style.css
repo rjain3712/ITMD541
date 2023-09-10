@@ -1,15 +1,14 @@
 /* Reset some default browser styles for consistency */
 body, h1, h2, p, ul, li {
-    margin: 10;
-    padding: 20;
-    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #4169E1;
-    color: #4169E1;
+    background-color: #f5f5f5;
+    color: #333;
     line-height: 1.6;
 }
 
@@ -21,7 +20,7 @@ body {
 
 header {
     background-color: #333;
-    color: #1E90FF;
+    color: #fff;
     text-align: center;
     padding: 20px 0;
 }
@@ -38,12 +37,21 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000080;
+    color: #333;
     font-weight: bold;
+    padding: 10px 20px; /* Added padding to style as buttons */
+    background-color: #ccc; /* Button background color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Hover background color */
+    color: #fff;
 }
 
 section {
-    background-color: #008080;
+    background-color: #fff;
     padding: 20px;
     margin: 20px 0;
     border-radius: 5px;
@@ -51,12 +59,10 @@ section {
 }
 
 footer {
-    background-color: #40E0D0;
+    background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 30px;
-    margin-top: 30px; /* Adds space below the footer */
-
+    padding: 10px 0;
 }
 
 /* Page-specific styles */
@@ -69,21 +75,26 @@ h2 {
     color: #333;
 }
 
+/* Homepage background color */
+body.index {
+    background-color: #0074e4; /* Blue background color */
+}
+
 /* Add responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
     .container {
-        padding: 20px;
+        padding: 10px;
     }
 
     nav ul li {
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 20px;
     }
 }
