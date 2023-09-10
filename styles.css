@@ -63,6 +63,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Page-specific styles */
@@ -83,6 +86,8 @@ body.index {
 /* Add responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
     .container {
+        position: relative;
+    min-height: 100%;
         padding: 10px;
     }
 
